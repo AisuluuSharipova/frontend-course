@@ -25,7 +25,7 @@ const PersonInfo = () => {
             <p>City: {person.city}</p>
             <p>Age: {person.age}</p>
             {message && <p>{message}</p>}
-            <button onClick={handleClick}>Click Me</button>
+            <button onClick={handleClick}>Promote</button>
         </div>
     );
 };
