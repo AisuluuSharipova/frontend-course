@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 
-const PersonalInfo = () => {
+const PersonInfo = () => {
+    const [message, setMessage] = useState("");
+
     const person = {
         name: "Aisuluu Sharipova",
         position: "Developer",
@@ -8,6 +10,10 @@ const PersonalInfo = () => {
         hobby: "Volleyball",
         city: "Bishkek",
         age: 20
+    };
+
+    const handleClick = () => {
+        setMessage("You clicked the button!");
     };
 
     return (
@@ -18,9 +24,12 @@ const PersonalInfo = () => {
             <p>Hobby: {person.hobby}</p>
             <p>City: {person.city}</p>
             <p>Age: {person.age}</p>
-            <button>Click Me</button>
+            {message && <p>{message}</p>}
+            <button onClick={handleClick}>Click Me</button>
         </div>
     );
 };
 
-export default PersonalInfo;
+export default PersonInfo;
+
+
