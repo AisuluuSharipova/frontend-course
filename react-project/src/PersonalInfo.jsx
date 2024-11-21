@@ -18,6 +18,7 @@ const PersonalInfo = () => {
             <p>Hobby: {person.hobby}</p>
             <p>City: {person.city}</p>
             <p>Age: {person.age}</p>
+            <button>Click Me</button>
         </div>
     );
 };
