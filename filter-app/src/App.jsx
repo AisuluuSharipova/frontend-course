@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 function App() {
   const [data, setData] = useState([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
   useEffect(() => {
     const mockData = [
@@ -18,11 +19,16 @@ function App() {
       { id: 10, title: 'Crime and Punishment' },
     ];
     setData(mockData);
+    setFilteredData(mockData); 
   }, []);
 
-  const filteredData = data.filter((item) =>
-    item.title.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+
+  useEffect(() => {
+    const filtered = data.filter((item) =>
+      item.title.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+    setFilteredData(filtered);
+  }, [searchTerm, data]); 
 
   return (
     <div>
