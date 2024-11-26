@@ -23,6 +23,12 @@ function App() {
   return (
     <div>
       <h1>Filter Books</h1>
+      <input
+        type="text"
+        placeholder="Search for a book"
+        value={searchTerm}
+        onChange={(e) => setSearchTerm(e.target.value)}
+      />
     </div>
   );
 }
