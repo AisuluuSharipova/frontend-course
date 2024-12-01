@@ -29,12 +29,12 @@ input {
   font-size: 16px;
   width: 300px;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: #1e1e1e;
   color: #ffffff;
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
   box-sizing: border-box;
-  margin-top: 70px;
+  margin-top: 10px;
 }
 
 input:focus {
@@ -52,12 +52,13 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: var(--bg-color);
-  font-size: 18px;
+  font-size: 20px;
   padding: 20px;
+  font-family: lobster
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 50px;
   font-weight: 600;
   margin: 0;
   color: var(--primary-color);
