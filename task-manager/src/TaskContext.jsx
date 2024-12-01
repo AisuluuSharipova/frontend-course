@@ -6,10 +6,10 @@ const TaskContext = createContext();
 export const useTasks = () => useContext(TaskContext);
 
 export const TaskProvider = ({ children }) => {
-  const { tasks, addTask, deleteTask, getTask, getTasks } = useTaskManager();
+  const { tasks, addTask, deleteTask, toggleTaskCompletion } = useTaskManager();
 
   return (
-    <TaskContext.Provider value={{ tasks, addTask, deleteTask, getTask, getTasks }}>
+    <TaskContext.Provider value={{ tasks, addTask, deleteTask, toggleTaskCompletion }}>
       {children}
     </TaskContext.Provider>
   );

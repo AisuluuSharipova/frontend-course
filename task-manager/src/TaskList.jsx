@@ -1,15 +1,19 @@
-import React from 'react';
+// TaskList.jsx
 import { useTasks } from './TaskContext';
+import TaskItem from './TaskItem';
 
 function TaskList() {
-  const { tasks, deleteTask } = useTasks();
+  const { tasks, deleteTask, toggleTaskCompletion } = useTasks();
 
   return (
     <ul>
       {tasks.map((task, index) => (
-        <li key={index}>
-          {task} <button onClick={() => deleteTask(task)}>Delete</button>
-        </li>
+        <TaskItem
+          key={index}
+          task={task}
+          onDelete={deleteTask}
+          onToggleCompletion={toggleTaskCompletion}
+        />
       ))}
     </ul>
   );
