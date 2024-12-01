@@ -1,4 +1,3 @@
-// TaskItem.jsx
 function TaskItem({ task, onDelete, onToggleCompletion }) {
     return (
       <li>
@@ -6,9 +5,9 @@ function TaskItem({ task, onDelete, onToggleCompletion }) {
           {task.name}
         </span>
         <button onClick={() => onToggleCompletion(task.name)}>
-          {task.completed ? '✅' : '✔️'}
+          {task.completed ? 'Done' : 'Mark as Done'}
         </button>
-        <button onClick={() => onDelete(task.name)}>❌</button>
+        <button onClick={() => onDelete(task.name)}>Delete</button>
       </li>
     );
   }
