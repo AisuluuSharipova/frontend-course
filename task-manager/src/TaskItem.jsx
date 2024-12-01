@@ -1,6 +1,10 @@
-function TaskItem({ task }) {
-    return <li>{task}</li>;
+function TaskItem({ task, onDelete }) {
+    return (
+      <li>
+        {task}
+        <button onClick={() => onDelete(task)}>Delete</button>
+      </li>
+    );
   }
   
   export default TaskItem;
-  

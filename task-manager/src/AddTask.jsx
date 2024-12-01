@@ -1,7 +1,25 @@
+import React, { useState } from 'react';
 import { useTasks } from './TaskContext';
 
 function AddTask() {
-  const { taskInput, setTaskInput, addTask } = useTasks();
+  const [taskInput, setTaskInput] = useState('');
+  const [warningMessage, setWarningMessage] = useState('');
+  const { addTask } = useTasks();
+
+  const handleAddTask = () => {
+    if (!taskInput.trim()) {
+      setWarningMessage("Task cannot be empty.");
+      return;
+    }
+
+    const taskAdded = addTask(taskInput);
+    if (!taskAdded) {
+      setWarningMessage("Task with this name already exists.");
+    } else {
+      setTaskInput('');
+      setWarningMessage('');
+    }
+  };
 
   return (
     <div>
@@ -10,7 +28,8 @@ function AddTask() {
         value={taskInput}
         onChange={(e) => setTaskInput(e.target.value)}
       />
-      <button onClick={addTask}>Add Task</button>
+      <button onClick={handleAddTask}>Add Task</button>
+      {warningMessage && <p style={{ color: 'red' }}>{warningMessage}</p>}
     </div>
   );
 }

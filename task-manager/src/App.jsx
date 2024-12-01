@@ -1,3 +1,4 @@
+import React from 'react';
 import { TaskProvider } from './TaskContext';
 import TaskList from './TaskList';
 import AddTask from './AddTask';

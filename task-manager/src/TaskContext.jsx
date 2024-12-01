@@ -1,20 +1,15 @@
-import { createContext, useContext, useState } from 'react';
+import { createContext, useContext } from 'react';
+import { useTaskManager } from './useTaskManager';
 
 const TaskContext = createContext();
 
 export const useTasks = () => useContext(TaskContext);
 
 export const TaskProvider = ({ children }) => {
-  const [tasks, setTasks] = useState([]);
-  const [taskInput, setTaskInput] = useState('');
-
-  const addTask = () => {
-    setTasks([...tasks, taskInput]);
-    setTaskInput('');
-  };
+  const { tasks, addTask, deleteTask, getTask, getTasks } = useTaskManager();
 
   return (
-    <TaskContext.Provider value={{ tasks, taskInput, setTaskInput, addTask }}>
+    <TaskContext.Provider value={{ tasks, addTask, deleteTask, getTask, getTasks }}>
       {children}
     </TaskContext.Provider>
   );
