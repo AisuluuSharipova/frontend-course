@@ -12,7 +12,7 @@ Below is an example of how the assets section looks:
 
 Below is an example of how the Filter App looks:
 
-![Filter-App Preview](image-preview/filter-app.png)
+![Filter-App Preview](image-preview/filter.png)
 
 
 ## Html-css task
