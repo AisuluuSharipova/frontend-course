@@ -4,12 +4,34 @@
 
 Below is an example of how the assets section looks:
 
-![Assets Preview](https://github.com/user-attachments/assets/8da5fcb5-dba3-4fc1-9dfc-7d8153e82de8)
 
----
+![Assets Preview](image-preview/assets.png)
+
 
 ## Filter App
 
 Below is an example of how the Filter App looks:
 
-![Filter App Preview](https://github.com/user-attachments/filter-app/img/filter-app.png)
+![Filter-App Preview](image-preview/filter-app.mp4)
+
+
+## Html-css task
+
+Below is an example of how the Html-css task looks:
+
+![Html Preview](image-preview/html-css-task.mp4)
+
+
+## React project
+
+Below is an example of how the React project looks:
+
+![React Preview](image-preview/react-project.mp4)
+
+
+## Translator project
+
+Below is an example of how the Translator project looks:
+
+![Translator Preview](image-preview/translator.mp4)
+
