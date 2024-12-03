@@ -31,7 +31,6 @@ Below is an example of how the Filter App looks:
 ![Filter-App Preview](image-preview/filter.png)
 
 
-
 ## Translator project
 
 Below is an example of how the Translator project looks:
