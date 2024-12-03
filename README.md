@@ -35,7 +35,7 @@ Below is an example of how the Filter App looks:
 
 Below is an example of how the Translator project looks:
 
-![Translator Preview](image-preview/translator(2).mp4)
+![Translator Preview](image-preview/translator.mp4)
 
 
 
