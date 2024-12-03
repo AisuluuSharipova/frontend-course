@@ -1,8 +1,8 @@
 # Frontend-course
 
- **Assets**! 
+ ##Assets**! 
 
-## How It Looks
+** How It Looks**
 
 Below is an example of how the page looks:
 
@@ -15,5 +15,5 @@ Below is an example of how the page looks:
 
 Below is an example of how the page looks:
 
-![Page Preview](filter-app/img/filter-app.png)
+![image](filter-app/img/filter-app.png)
 
