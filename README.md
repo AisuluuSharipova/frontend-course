@@ -12,4 +12,4 @@ Below is an example of how the assets section looks:
 
 Below is an example of how the Filter App looks:
 
-![Filter App Preview](filter-app/img/filter-app.png)
+![Filter App Preview](https://github.com/user-attachments/filter-app/img/filter-app.png)
