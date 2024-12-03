@@ -1,19 +1,15 @@
-# Frontend-course
+# Frontend Course
 
- ##Assets**! 
+## Assets
 
-** How It Looks**
+Below is an example of how the assets section looks:
 
-Below is an example of how the page looks:
+![Assets Preview](https://github.com/user-attachments/assets/8da5fcb5-dba3-4fc1-9dfc-7d8153e82de8)
 
-![image](https://github.com/user-attachments/assets/8da5fcb5-dba3-4fc1-9dfc-7d8153e82de8)
+---
 
+## Filter App
 
-**Filter-app**! 
+Below is an example of how the Filter App looks:
 
-## How It Looks
-
-Below is an example of how the page looks:
-
-![image](filter-app/img/filter-app.png)
-
+![Filter App Preview](filter-app/img/filter-app.png)
